@@ -22,11 +22,11 @@ class Stack:
 
     def push(self, value):
         self.storage.add_to_end(value)
-         self.size += 1
+        self.size += 1
 
     def pop(self):
        if not self.storage.head:
-             return None
-         else:
-             self.size -= 1
-             return self.storage.remove_at_end()
+            return None
+        else:
+            self.size -= 1
+            return self.storage.remove_at_end()
